@@ -1,0 +1,11 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t ademardocker/docker-react -f Dockerfile.dev .
+
+script:
+    - docker run ademardocker/docker-react npm run tes -- --coverage
+
+    
