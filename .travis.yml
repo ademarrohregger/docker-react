@@ -1,5 +1,4 @@
-language: 
-    - javascript
+
 os: 
     - linux
     
