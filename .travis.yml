@@ -1,7 +1,7 @@
 language: node
 os: 
     - linux
-    - osx
+    
 
 services:
     - docker
