@@ -1,0 +1,306 @@
+ PASS  src/App.test.js
+  ✓ renders learn react link (31ms)
+  ✓ renders without crashing (5ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        1.754s
+Ran all test suites.
+
+Watch Usage
+ › Press f to run only failed tests.
+ › Press o to only run tests related to changed files.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+
+iMac-de-Ademar:frontend tioademar$ docker-compose up
+Starting frontend_web_1 ... done
+Attaching to frontend_web_1
+web_1  | 
+web_1  | > frontend@0.1.0 start /app
+web_1  | > react-scripts start
+web_1  | 
+web_1  | ℹ ｢wds｣: Project is running at http://172.22.0.2/
+web_1  | ℹ ｢wds｣: webpack output is served from 
+web_1  | ℹ ｢wds｣: Content not from webpack is served from /app/public
+web_1  | ℹ ｢wds｣: 404s will fallback to /
+web_1  | Starting the development server...
+web_1  | 
+web_1  | Compiled successfully!
+web_1  | 
+web_1  | You can now view frontend in the browser.
+web_1  | 
+web_1  |   Local:            http://localhost:3000
+web_1  |   On Your Network:  http://172.22.0.2:3000
+web_1  | 
+web_1  | Note that the development build is not optimized.
+web_1  | To create a production build, use npm run build.
+web_1  | 
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_web_1 ... done
+iMac-de-Ademar:frontend tioademar$ docker run -it  74586370c3b1 npm run test  
+iMac-de-Ademar:frontend tioademar$ docker-compose up
+Starting frontend_web_1 ... done
+Attaching to frontend_web_1
+web_1  | 
+web_1  | > frontend@0.1.0 start /app
+web_1  | > react-scripts start
+web_1  | 
+web_1  | ℹ ｢wds｣: Project is running at http://172.22.0.2/
+web_1  | ℹ ｢wds｣: webpack output is served from 
+web_1  | ℹ ｢wds｣: Content not from webpack is served from /app/public
+web_1  | ℹ ｢wds｣: 404s will fallback to /
+web_1  | Starting the development server...
+web_1  | 
+web_1  | Compiled successfully!
+web_1  | 
+web_1  | You can now view frontend in the browser.
+web_1  | 
+web_1  |   Local:            http://localhost:3000
+web_1  |   On Your Network:  http://172.22.0.2:3000
+web_1  | 
+web_1  | Note that the development build is not optimized.
+web_1  | To create a production build, use npm run build.
+web_1  | 
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_web_1 ... done
+iMac-de-Ademar:frontend tioademar$ docker-compose up
+ERROR: The Compose file './docker-compose.yml' is invalid because:
+Unsupported config option for services.tests: 'commmand'
+iMac-de-Ademar:frontend tioademar$ docker-compose up --build
+ERROR: The Compose file './docker-compose.yml' is invalid because:
+Unsupported config option for services.tests: 'commmand'
+iMac-de-Ademar:frontend tioademar$ docker-compose up --build
+Building web
+Step 1/6 : FROM node:alpine
+ ---> b7dc3fe8d4f8
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 4cea4d2177cf
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> 4f7b6e05ce75
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> a3b618050a2b
+Step 5/6 : COPY . .
+ ---> ae16aa4e1c00
+Step 6/6 : CMD ["npm","run","start"]
+ ---> Running in 0fafaf68b02b
+Removing intermediate container 0fafaf68b02b
+ ---> 51546783b868
+
+Successfully built 51546783b868
+Successfully tagged frontend_web:latest
+Building tests
+Step 1/6 : FROM node:alpine
+ ---> b7dc3fe8d4f8
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 4cea4d2177cf
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> 4f7b6e05ce75
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> a3b618050a2b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> ae16aa4e1c00
+Step 6/6 : CMD ["npm","run","start"]
+ ---> Using cache
+ ---> 51546783b868
+
+Successfully built 51546783b868
+Successfully tagged frontend_tests:latest
+Recreating frontend_web_1 ... done
+Creating frontend_tests_1 ... done
+Attaching to frontend_web_1, frontend_tests_1
+web_1    | 
+web_1    | > frontend@0.1.0 start /app
+web_1    | > react-scripts start
+web_1    | 
+web_1    | ℹ ｢wds｣: Project is running at http://172.22.0.2/
+web_1    | ℹ ｢wds｣: webpack output is served from 
+web_1    | ℹ ｢wds｣: Content not from webpack is served from /app/public
+web_1    | ℹ ｢wds｣: 404s will fallback to /
+web_1    | Starting the development server...
+web_1    | 
+web_1    | Compiled successfully!
+web_1    | 
+web_1    | You can now view frontend in the browser.
+web_1    | 
+web_1    |   Local:            http://localhost:3000
+web_1    |   On Your Network:  http://172.22.0.2:3000
+web_1    | 
+web_1    | Note that the development build is not optimized.
+web_1    | To create a production build, use npm run build.
+web_1    | 
+tests_1  | 
+tests_1  | > frontend@0.1.0 test /app
+tests_1  | > react-scripts test
+tests_1  | 
+tests_1  | PASS src/App.test.js
+tests_1  |   ✓ renders learn react link (35ms)
+tests_1  |   ✓ renders without crashing (4ms)
+tests_1  | 
+tests_1  | Test Suites: 1 passed, 1 total
+tests_1  | Tests:       2 passed, 2 total
+tests_1  | Snapshots:   0 total
+tests_1  | Time:        2.436s
+tests_1  | Ran all test suites.
+tests_1  | 
+frontend_web_1 exited with code 0
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_tests_1 ... done
+iMac-de-Ademar:frontend tioademar$ docker-compose up --build
+Building web
+Step 1/6 : FROM node:alpine
+ ---> b7dc3fe8d4f8
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 4cea4d2177cf
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> 4f7b6e05ce75
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> a3b618050a2b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> ae16aa4e1c00
+Step 6/6 : CMD ["npm","run","start"]
+ ---> Using cache
+ ---> 51546783b868
+
+Successfully built 51546783b868
+Successfully tagged frontend_web:latest
+Building tests
+Step 1/6 : FROM node:alpine
+ ---> b7dc3fe8d4f8
+Step 2/6 : WORKDIR '/app'
+ ---> Using cache
+ ---> 4cea4d2177cf
+Step 3/6 : COPY package.json .
+ ---> Using cache
+ ---> 4f7b6e05ce75
+Step 4/6 : RUN npm install
+ ---> Using cache
+ ---> a3b618050a2b
+Step 5/6 : COPY . .
+ ---> Using cache
+ ---> ae16aa4e1c00
+Step 6/6 : CMD ["npm","run","start"]
+ ---> Using cache
+ ---> 51546783b868
+
+Successfully built 51546783b868
+Successfully tagged frontend_tests:latest
+Starting frontend_web_1   ... done
+Starting frontend_tests_1 ... done
+Attaching to frontend_tests_1, frontend_web_1
+tests_1  | 
+tests_1  | > frontend@0.1.0 test /app
+tests_1  | > react-scripts test
+tests_1  | 
+web_1    | 
+web_1    | > frontend@0.1.0 start /app
+web_1    | > react-scripts start
+web_1    | 
+web_1    | ℹ ｢wds｣: Project is running at http://172.22.0.3/
+web_1    | ℹ ｢wds｣: webpack output is served from 
+web_1    | ℹ ｢wds｣: Content not from webpack is served from /app/public
+web_1    | ℹ ｢wds｣: 404s will fallback to /
+web_1    | Starting the development server...
+web_1    | 
+tests_1  | PASS src/App.test.js
+tests_1  |   ✓ renders learn react link (42ms)
+tests_1  |   ✓ renders without crashing (4ms)
+tests_1  | 
+tests_1  | Test Suites: 1 passed, 1 total
+tests_1  | Tests:       2 passed, 2 total
+tests_1  | Snapshots:   0 total
+tests_1  | Time:        2.301s
+tests_1  | Ran all test suites.
+tests_1  | 
+web_1    | Compiled successfully!
+web_1    | 
+web_1    | You can now view frontend in the browser.
+web_1    | 
+web_1    |   Local:            http://localhost:3000
+web_1    |   On Your Network:  http://172.22.0.3:3000
+web_1    | 
+web_1    | Note that the development build is not optimized.
+web_1    | To create a production build, use npm run build.
+web_1    | 
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping frontend_web_1   ... done
+Stopping frontend_tests_1 ... done
+iMac-de-Ademar:frontend tioademar$ git init
+Reinitialized existing Git repository in /Users/tioademar/Desktop/docker/frontend/.git/
+iMac-de-Ademar:frontend tioademar$ git add .
+iMac-de-Ademar:frontend tioademar$ git commit -m "initial commit"
+[master 7222f3d] initial commit
+ Committer: TioAdemar <tioademar@iMac-de-Ademar.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 84 insertions(+), 29 deletions(-)
+ create mode 100644 Dockerfile
+ create mode 100644 Dockerfile.dev
+ create mode 100644 docker-compose.yml
+ rewrite src/App.js (82%)
+iMac-de-Ademar:frontend tioademar$ ls
+Dockerfile		README.md		docker-compose.yml	package-lock.json	public
+Dockerfile.dev		build			node_modules		package.json		src
+iMac-de-Ademar:frontend tioademar$ git remote add origin git@github.com:ademarrohregger/docker-react.git
+iMac-de-Ademar:frontend tioademar$ git push origin master
+The authenticity of host 'github.com (18.231.5.6)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,18.231.5.6' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+iMac-de-Ademar:frontend tioademar$ git config --global --edit
+hint: Waiting for your editor to close the file... 
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#       name = ademarrohregger
+#       email = ademar.rohregger@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- INSERT --
