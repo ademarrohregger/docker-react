@@ -1,5 +1,7 @@
-language: ruby
-os: linux
+language: node
+os: 
+    - linux
+    - osx
 
 services:
     - docker
