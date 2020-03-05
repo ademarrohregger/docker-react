@@ -14,4 +14,4 @@ script:
     - docker run -e CI=true ademardocker/docker-react npm run test 
 
 
-
+deploy:
