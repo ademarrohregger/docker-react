@@ -1,44 +1,107 @@
-Last login: Wed Mar  4 16:40:44 on ttys002
+Last login: Wed Mar  4 14:17:13 on ttys002
 
 The default interactive shell is now zsh.
 To update your account to use zsh, please run `chsh -s /bin/zsh`.
 For more details, please visit https://support.apple.com/kb/HT208050.
 iMac-de-Ademar:~ tioademar$ cd Desktop/docker/frontend
-iMac-de-Ademar:frontend tioademar$ ls
-Dockerfile		docker-compose.yml	package.json
-Dockerfile.dev		git_sshkey		public
-README.md		git_sshkey.pub		src
-Terminal Saved Output	node_modules		travis.yml
-build			package-lock.json
 iMac-de-Ademar:frontend tioademar$ git init
 Reinitialized existing Git repository in /Users/tioademar/Desktop/docker/frontend/.git/
-iMac-de-Ademar:frontend tioademar$ git config --global user.name "ademarrohregger"
-iMac-de-Ademar:frontend tioademar$ git config --global user.email "ademar.rohregger@gmail.com"
 iMac-de-Ademar:frontend tioademar$ git add .
+iMac-de-Ademar:frontend tioademar$ git commit -m "initial commit"
+[master d6d154e] initial commit
+ Committer: TioAdemar <tioademar@iMac-de-Ademar.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 306 insertions(+)
+ create mode 100644 Terminal Saved Output
+iMac-de-Ademar:frontend tioademar$ git config --global user.name "ademarrohregger"
+iMac-de-Ademar:frontend tioademar$ git config --global user.email "ademar.rohregger@gmail.com|
+> 
+> 
+iMac-de-Ademar:frontend tioademar$ git config --global user.email "ademar.rohregger@gmail.com"
+iMac-de-Ademar:frontend tioademar$ git commit -m "initial commit"
+On branch master
+nothing to commit, working tree clean
+iMac-de-Ademar:frontend tioademar$ git commit --amend --reser-author
+error: unknown option `reser-author'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
 iMac-de-Ademar:frontend tioademar$ git commit --amend --reset-author
 hint: Waiting for your editor to close the file... 
+initial commit
 
+from macos ssh
 
-added travis deploy config
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
 # On branch master
 # Changes to be committed:
-#       deleted:    oldies/Dockerfile
-#       deleted:    oldies/Dockerfile.dev
-#       deleted:    oldies/README.md
-#       deleted:    oldies/Terminal Saved Output
-#       deleted:    oldies/build/asset-manifest.json
-#       deleted:    oldies/build/favicon.ico
-#       deleted:    oldies/build/index.html
-#       deleted:    oldies/build/logo192.png
-#       deleted:    oldies/build/logo512.png
-#       deleted:    oldies/build/manifest.json
-#       deleted:    oldies/build/precache-manifest.fd6e75e1e805307fa0db49d37c3e7ee8.js
-#       deleted:    oldies/build/robots.txt
-#       deleted:    oldies/build/service-worker.js
-#       deleted:    oldies/build/static/css/main.d1b05096.chunk.css
-#       deleted:    oldies/build/static/css/main.d1b05096.chunk.css.map
-#       deleted:    oldies/build/static/js/2.4024f285.chunk.js
-
+#       new file:   Terminal Saved Output
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
