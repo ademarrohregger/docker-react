@@ -15,7 +15,6 @@ script:
 
 
 deploy:
-    edge: true
     provider: elasticbeanstalk
     access_key_id: "AKIAWHMBL47UH7DMKFGM"
     secret_access_key: "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"
