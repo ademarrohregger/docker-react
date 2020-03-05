@@ -20,7 +20,7 @@ deploy:
     bucket_name:"elasticbeanstalk-us-east-1-428157429736"
     bucket_path: "docker_web_server"
     on:
-        branch: master
+        branch: ademarrohregger-patch-1
     access_key_id: $AWS_ACCESS_KEY
     secret_acess_key:
         secure: "AWS_SECRET_KEY"
