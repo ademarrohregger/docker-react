@@ -8,6 +8,8 @@ COPY . .
 RUN npm run build
 
 
+
+
 # Run phase
 
 FROM nginx
